@@ -1,13 +1,10 @@
 import './App.scss';
+import AppLayout from './components/AppLayout';
 
 function App() {
   return (
     <div className="App">
-      <div>Header</div>
-      <div>
-        <div>All topics</div>
-        <div>Profile</div>
-      </div>
+      <AppLayout />
     </div>
   );
 }
