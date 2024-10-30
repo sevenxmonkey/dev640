@@ -42,7 +42,8 @@ const Topics = (): JSX.Element => {
     setPosts(sampleTopics);
   }, []);
   return (
-    <div className="posts-list">
+    <div className="posts-list" style={{ padding: "16px" }}>
+      <h2 style={{ fontSize: "2rem", marginBottom: "16px" }}>Hot Topics</h2>
       {posts.map((post) => (
         <TopicCard key={post.id} post={post} />
       ))}

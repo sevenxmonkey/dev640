@@ -1,4 +1,6 @@
 import { TabId, useAppLayout } from "../../hooks/useAppLayout";
+import Network from "../Network";
+import Profile from "../Profile";
 import Topics from "../Topics";
 
 const AppBody = (): JSX.Element => {
@@ -8,10 +10,10 @@ const AppBody = (): JSX.Element => {
     value: <Topics />
   }, {
     tabId: TabId.NETWORK,
-    value: <div>Network</div>
+    value: <Network />
   }, {
     tabId: TabId.PROFILE,
-    value: <div>Profile</div>
+    value: <Profile />
   }]
   const renderContent = tabItems.find(item => item.tabId === activeTabId)
 
