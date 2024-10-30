@@ -28,6 +28,10 @@
       color: white;
       border: none;
 
+      &.active{
+        border-bottom: 3px solid greenyellow;
+      }
+
       &:hover {
         background-color: rgba(0, 128, 0, 0.5);
         cursor: pointer;

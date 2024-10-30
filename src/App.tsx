@@ -1,10 +1,13 @@
 import './App.scss';
 import AppLayout from './components/AppLayout';
+import { AppLayoutContextProvider } from './hooks/useAppLayout';
 
 function App() {
   return (
     <div className="App">
-      <AppLayout />
+      <AppLayoutContextProvider>
+        <AppLayout />
+      </AppLayoutContextProvider>
     </div>
   );
 }
